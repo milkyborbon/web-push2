@@ -11,8 +11,10 @@
 
     <script>
         addEventListener('load', async() => {
-            let sw = await navigator.serviceWorker.register('./sw.js');
-            console.log(sw);
+            if ('serviceWorker' in navigator) {
+                console.log('Service Worker is supported.');
+                let sw = await navigator.serviceWorker.register('./sw.js');
+            }
         });
 
         async function subscribe() {
