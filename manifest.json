@@ -1,26 +1,39 @@
 {
-    "name": "PWA Web-push",
-    "short_name": "pwa-web-push",
-    "start_url": "/",
-    "display": "fullscreen",
-    "description": "PWA push notifications using web push",
-    "lang": "en",
-    "dir": "auto",
-    "theme_color": "#000000",
-    "background_color": "#ffffff",
-    "orientation": "any",
-    "icons": [
-        {
-            "src": "favicon.ico",
-            "sizes": "64x64 32x32 24x24 16x16",
-            "type": "image/x-icon"
-        },
-        {
-            "src": "android-launchericon-512-512.png",
-            "sizes": "512x512",
-            "type": "image/png",
-            "purpose": "any"
-        }
-    ],
-    "prefer_related_applications": false
+  "name": "PWA Web-push",
+  "short_name": "pwa-web-push",
+  "start_url": "/",
+  "display": "fullscreen",
+  "description": "PWA push notifications using web push",
+  "lang": "en",
+  "dir": "auto",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "manifest-icon-192.maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "manifest-icon-192.maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "manifest-icon-512.maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "manifest-icon-512.maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "prefer_related_applications": false
 }
