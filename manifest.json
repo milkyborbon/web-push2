@@ -1,14 +1,6 @@
 {
-  "name": "PWA Web-push",
-  "short_name": "pwa-web-push",
-  "start_url": "/",
-  "display": "fullscreen",
-  "description": "PWA push notifications using web push",
-  "lang": "en",
-  "dir": "auto",
-  "theme_color": "#000000",
-  "background_color": "#ffffff",
-  "orientation": "any",
+  "short_name": "PWA web push",
+  "name": "PWA web push",
   "icons": [
     {
       "src": "manifest-icon-192.maskable.png",
@@ -35,5 +27,11 @@
       "purpose": "maskable"
     }
   ],
-  "prefer_related_applications": false
+  "start_url": ".",
+  "display": "fullscreen",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "lang": "en",
+  "orientation": "any"
 }
