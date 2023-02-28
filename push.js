@@ -8,6 +8,5 @@ let vapidKeys = {
 
 push.setVapidDetails('mailto:milkyborbon30@gmail.com', vapidKeys.publicKey, vapidKeys.privateKey);
 
-let sub = {"endpoint":"https://fcm.googleapis.com/fcm/send/coTcJTPZYy8:APA91bF30TSMa9qGGOAZV59ATFIYrhNIX5spbJ50ToqKzTehRQ8oxN-EmaTBRVRyNxGII2tWhnEfUjljFR_Qbnampw7bE2exYLr_1RXcvJXklt6ClmB4V8t4QqAYL5eBHgbEjaGunbjb","expirationTime":null,"keys":
-{"p256dh":"BOhOjq9v2ZmxWButy280aCdRutydrG_s1oKNKOWmNXeu__5lNIR6Z9XeOITa--CNuWzSWVzTv9ib2607SLKdRa8","auth":"VDkYg DQYtLn3NbtRXWYpyQ"}};
+let sub = {"endpoint":"https://fcm.googleapis.com/fcm/send/fVrvKpjbWTI:APA91bE3l9f3GtIsI_zt-_tp9dCZ2q_vXgdUtmRebq6YByYWq3MTDIwrkznbayDKxUNz3ArsDjGdmlWNWw10wHBz1bY-2UxNz-mSWOkkyE7LPW4cfTcgOgmGdXGk2tnmmE1ui7FnX0o8","expirationTime":null,"keys":{"p256dh":"BDFU5sEVjXY2yo9BXi-UxvOqXlvt020nTWxBkcgPj5weiLt37lVOd1KqUTawyMevgydvoXaVGDMFhR3rUiOOM3k","auth":"RB5Qco_cFTmMTeWlevXO-w"}};
 push.sendNotification(sub, 'This is the Test Message');
