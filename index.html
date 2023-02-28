@@ -20,7 +20,7 @@
                 subscribe();
             }
         });
-
+        */
         async function subscribe() {
             let sw = await navigator.serviceWorker.ready;
             let push = await sw.pushManager.subscribe({
@@ -31,7 +31,7 @@
 
             //alert(JSON.stringify(push));
         }
-        */
+        
         navigator.serviceWorker.register('./sw.js');
         navigator.serviceWorker.ready.then(
             (serviceWorkerRegistration) => {
