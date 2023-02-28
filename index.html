@@ -14,6 +14,7 @@
             if ('serviceWorker' in navigator) {
                 console.log('Service Worker is supported.');
                 let sw = await navigator.serviceWorker.register('./sw.js');
+                subscribe();
             }
         });
 
@@ -25,7 +26,7 @@
             });
             console.log('Subscription object: ', JSON.stringify(push));
 
-            alert(JSON.stringify(push));
+            //alert(JSON.stringify(push));
         }
     </script>
 </body>
