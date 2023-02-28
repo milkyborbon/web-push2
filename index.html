@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="manifest" href="manifest.json" />
 </head>
+
 <body>
-    
+
     <button onclick="subscribe()">Subscribe to Push Notifications</button>
 
     <script>
@@ -32,26 +34,27 @@
         */
         navigator.serviceWorker.register('./sw.js');
         navigator.serviceWorker.ready.then(
-  (serviceWorkerRegistration) => {
-    const options = {
-      userVisibleOnly: true,
-      applicationServerKey: 'BGlFCGsO5eAj_kMeDjKzwpQ_ElWna-HQcb063UpT-xx8UJ1ILsOGLbwsioIRsd1JNTHmKpE5RXNKeFTQtzj0ipg',
-    };
-    serviceWorkerRegistration.pushManager.subscribe(options).then(
-      (pushSubscription) => {
-        console.log(pushSubscription.endpoint);
-        // The push subscription details needed by the application
-        // server are now available, and can be sent to it using,
-        // for example, an XMLHttpRequest.
-      }, (error) => {
-        // During development it often helps to log errors to the
-        // console. In a production environment it might make sense to
-        // also report information about errors back to the
-        // application server.
-        console.error(error);
-      }
-    );
-  });
+            (serviceWorkerRegistration) => {
+                const options = {
+                    userVisibleOnly: true,
+                    applicationServerKey: 'BGlFCGsO5eAj_kMeDjKzwpQ_ElWna-HQcb063UpT-xx8UJ1ILsOGLbwsioIRsd1JNTHmKpE5RXNKeFTQtzj0ipg',
+                };
+                serviceWorkerRegistration.pushManager.subscribe(options).then(
+                    (pushSubscription) => {
+                        console.log('Subscription object: ', JSON.stringify(pushSubscription));
+                        // The push subscription details needed by the application
+                        // server are now available, and can be sent to it using,
+                        // for example, an XMLHttpRequest.
+                    }, (error) => {
+                        // During development it often helps to log errors to the
+                        // console. In a production environment it might make sense to
+                        // also report information about errors back to the
+                        // application server.
+                        console.error(error);
+                    }
+                );
+            });
     </script>
 </body>
+
 </html>
