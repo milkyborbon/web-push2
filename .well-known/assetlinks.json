@@ -1,0 +1,6 @@
+[{
+        "relation": ["delegate_permission/common.handle_all_urls"],
+        "target" : { "namespace": "android_app", "package_name": "com.milkyapps.webpush",
+                     "sha256_cert_fingerprints": ["E3:2E:A2:EB:9E:B3:17:86:A1:8C:6F:49:4F:E1:ED:72:A0:6A:D5:C3:2C:9F:79:32:A1:B0:36:7E:82:B9:D0:67"] }
+      }
+]
